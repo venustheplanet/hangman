@@ -12,3 +12,9 @@ Task 3: Ask user for an alphabet input
 3. ask user to input an alphabet
 Task 4: Check if input is a valid single alphabet character
 4. check if input is valid
+
+For milestone 3:
+function 'ask_for_input':
+- does step 3 - 4 in milestone 2
+- Additionally convert the letter to lowercase
+- Call the function Check 'check_guess' that checks the guess of the word is in the letter or not
