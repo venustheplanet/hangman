@@ -32,6 +32,7 @@ class Hangman:
                 print("You already tried that letter!")
             else:
                 self.check_guess(guess)
+                break
             self.list_of_guesses.append(guess)
 
 hangman = Hangman(['apple', 'kiwi', 'orange'])
