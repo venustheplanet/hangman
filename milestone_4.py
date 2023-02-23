@@ -24,9 +24,8 @@ class Hangman:
             print(f"You have {self.num_lives} lives left.")
 
     def ask_for_input(self):
-        while True:
-            if self.num_lives == 0:
-                break
+        while self.num_lives != 0:
+            print(self.num_lives)
             guess = input("Please guess a letter: ")
             if not guess.isalpha() or len(guess) != 1:
                 print("Invalid letter. Please, enter a single alphabetical character.")
