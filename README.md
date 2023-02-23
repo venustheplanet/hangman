@@ -40,3 +40,16 @@ Methods:
 
 `ask_for_input` method:
 - ask user to input a single alphabet
+
+Milestone 5: Putting it all together
+Create a function `play_game` that will run all the code to run the game as expected in milestone_5.py. 
+
+Create a function called `play_game` that takes `word_list` as a parameter. Inside the function:
+    Step 1. Create a variable called num_lives and assign it to 5.
+    Step 2. Create an instance of the Hangman class. Do this by calling the Hangman class and assign it to a variable called game.
+    Step 3. Pass word_list and num_lives as arguments to the game object.
+    Step 4. Create a while loop and set the condition to True. In the body of the loop, do the following:
+        1. If the `num_lives` is 0. If it is, that means the game has ended and the user lost. Print a message saying 'You lost!'.
+        2. Elif the `num_letters` is greater than 0. In this case, you would want to continue the game, so you need to call the `ask_for_input` method. 
+        3. Elif the `num_lives` is not 0 and the `num_letters` is not greater than 0, that means the user has won the game. Print a message saying 'Congratulations. You won the game!'.
+
