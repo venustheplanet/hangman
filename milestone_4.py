@@ -24,8 +24,7 @@ class Hangman:
             print(f"You have {self.num_lives} lives left.")
 
     def ask_for_input(self):
-        while self.num_lives != 0:
-            print(self.num_lives)
+        while True:
             guess = input("Please guess a letter: ")
             if not guess.isalpha() or len(guess) != 1:
                 print("Invalid letter. Please, enter a single alphabetical character.")
@@ -33,8 +32,8 @@ class Hangman:
                 print("You already tried that letter!")
             else:
                 self.check_guess(guess)
-                # break
-            self.list_of_guesses.append(guess)
+                self.list_of_guesses.append(guess)
+                break
 
 hangman = Hangman(['apple', 'kiwi', 'orange'])
 hangman.ask_for_input()
