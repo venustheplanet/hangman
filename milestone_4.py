@@ -32,6 +32,8 @@ class Hangman:
                 print("You already tried that letter!")
             else:
                 self.check_guess(guess)
+                # break
+            if self.num_lives == 0:
                 break
             self.list_of_guesses.append(guess)
 
